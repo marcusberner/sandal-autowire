@@ -5,10 +5,10 @@
   "main": "sandal",
   "author": "Marcus Berner <marcus@burner.se>",
   "dependencies": {
-    "sandal": "2.2.2"
   },
   "devDependencies": {
-    "tape": "2.12.1"
+    "tape": "2.12.1",
+	  "sandal": "2.3.0"
   },
   "scripts": {
     "test": "tape test/*.js test/**/*.js"

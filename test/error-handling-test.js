@@ -1,10 +1,11 @@
 
 var test = require("tape"),
 	path = require('path'),
-	sandal;
+	Sandal = require('sandal'),
+	sandal = new Sandal();
 
 test('Object as factory', function (t) {
-	sandal = require('../index.js')();
+	sandal.extend(require('../index.js'));
 	var err;
 	try {
 		sandal.autowire(path.join(__dirname, '../test-components/with-errors/object-as-factory'));

@@ -1,11 +1,5 @@
-var counter = 0;
-
 module.exports = function (d1, d2) {
-
-	counter++;
-
 	return {
-		count: counter,
 		getDep1: function () {
 			return d1;
 		},

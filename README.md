@@ -11,7 +11,7 @@ Sandal-autowire extends the [sandal](https://github.com/marcusberner/sandal) (2.
 
 ## Usage
 
-Sandal-autowire will extend the container with an `.autowire(path)` function. The autowire function will require all .js and .json files in the provided directory recursively and register them in the container.
+Sandal-autowire will extend the container with an `.autowire(path, [options])` function. The autowire function will require all .js and .json files in the provided directory recursively and register them in the container.
 
 ### Examples
 ```js
@@ -28,6 +28,7 @@ sandal.autowire(path);
 ```
 
 The behavior of each component can be controlled by adding configurations in a property named `autowire`. All configurations have default behaviors. Thus an autowire property is not required.
+Default options can be provided to `.autowire(path, [options])` in hte same format. Options defined for a component will override the default options.
 
 ### Example
 ```js
